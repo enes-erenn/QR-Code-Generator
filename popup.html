@@ -12,7 +12,7 @@
   <body>
     <div id="menu">
       <h2 class="header">QR Code</h2>
-      <button class="custom-btn btn-style"><span>Read</span></button>
+      <button id="read-btn" class="custom-btn btn-style"><span>Read</span></button>
       <span>or</span>
       <button id="create-btn" class="custom-btn btn-style">
         <span>Create</span>
@@ -24,7 +24,17 @@
         <input id="input" type="text" placeholder="Link"/>
         <button id="submit" value="&#10095">Create</button>
       </form>
-      <div id="output" class="hidden">
+      <div id="output_create" class="hidden">
+      </div>
+    </div>
+    <div id="read-menu" class="hidden">
+      <h3 class="header">Read an QR Code</h3>
+      <div>
+        <input id="link" type="text">
+        <button type="submit" id="read">Read</button>
+      </div>
+      <div id="output_read" class="hidden">
+
       </div>
     </div>
   </body>
