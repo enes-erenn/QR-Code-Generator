@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="/Assets/icons/icon128.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Create and Read QR Code</title>
   </head>
   <body>
@@ -21,10 +22,9 @@
       <h3 class="header">Create an QR Code</h3>
       <form class="input-group">
         <input id="input" type="text" placeholder="Link"/>
-        <input type="submit" class="next-btn" value="&#10095" />
+        <button id="submit" value="&#10095">Create</button>
       </form>
-      <div id="output">
-
+      <div id="output" class="hidden">
       </div>
     </div>
   </body>
