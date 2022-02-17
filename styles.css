@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  background: #e0e5ec;
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  margin: 10px 0 4px 0;
+  text-align: center;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.custom-btn {
+  margin: 10px 0;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-style {
+  line-height: 39px;
+  padding: 0;
+}
+.btn-style:hover {
+  background: transparent;
+  color: #000;
+}
+.btn-style span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-style:before,
+.btn-style:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-style:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-style:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-style:hover:before {
+  height: 100%;
+}
+.btn-style:hover:after {
+  width: 100%;
+}
+.btn-style span:before,
+.btn-style span:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-style span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-style span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-style span:hover:before {
+  height: 100%;
+}
+.btn-style span:hover:after {
+  width: 100%;
+}
+#menu {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.next-btn {
+  height: 2.4rem;
+  background-color: #eee;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  padding: 2px 6px;
+  margin: 0;
+}
+#input {
+  height: 2rem;
+  padding: 2px 6px;
+  border: 1px solid black;
+  background-color: #eee;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  margin: 0;
+  outline: none;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

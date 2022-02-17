@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/Assets/icons/icon128.png" />
+    <title>Create and Read QR Code</title>
+  </head>
+  <body>
+    <div id="menu">
+      <h2 class="header">QR Code</h2>
+      <button class="custom-btn btn-style"><span>Read</span></button>
+      <span>or</span>
+      <button id="create-btn" class="custom-btn btn-style">
+        <span>Create</span>
+      </button>
+    </div>
+    <div id="create-menu" class="hidden">
+      <h3 class="header">Create an QR Code</h3>
+      <form class="input-group">
+        <input id="input" type="text" placeholder="Link"/>
+        <input type="submit" class="next-btn" value="&#10095" />
+      </form>
+      <div id="output">
+
+      </div>
+    </div>
+  </body>
+  <script src="content-script.js" defer></script>
+</html>
