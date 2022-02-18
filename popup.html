@@ -37,7 +37,11 @@
     <div id="read-menu" class="hidden">
       <h3 class="header">Read QR Code with</h3>
       <form id="read_with_link" class="input-group">
-        <input id="link" type="text" />
+        <input
+          id="link"
+          type="text"
+          placeholder="Enter the QR Code Image's URL here"
+        />
         <button type="submit" id="read">
           <img class="icons" src="Assets\icons\next.svg" alt="" />
         </button>
@@ -46,6 +50,7 @@
         <div id="loader-el" class="loader"></div>
       </div>
     </div>
+    <div id="error-container"></div>
   </body>
   <script src="content-script.js" defer></script>
 </html>
