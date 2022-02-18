@@ -47,6 +47,7 @@ createBtn.addEventListener("click", () => {
             .then((e) => e.json())
             .then((e) => {
               outputRead.innerHTML = `<a href="${e[0].symbol[0].data}" target="_blank"><button class="custom-btn btn-style"><span>Link</span></button></a>`;
+              link.value = "";
             })
             .catch(() => {
               loader.classList.add("hidden"),
