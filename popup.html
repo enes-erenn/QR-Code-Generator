@@ -6,35 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="/Assets/icons/icon128.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Create and Read QR Code</title>
   </head>
   <body>
+    <button id="main-page" class="hidden">
+      <img class="icons" src="Assets\icons\back.svg" alt="" />
+    </button>
     <div id="menu">
       <h2 class="header">QR Code</h2>
-      <button id="read-btn" class="custom-btn btn-style"><span>Read</span></button>
-      <span>or</span>
-      <button id="create-btn" class="custom-btn btn-style">
-        <span>Create</span>
-      </button>
+      <div class="controls">
+        <button id="read-btn" class="custom-btn btn-style">
+          <span>Read</span>
+        </button>
+        <span id="or">or</span>
+        <button id="create-btn" class="custom-btn btn-style">
+          <span>Create</span>
+        </button>
+      </div>
     </div>
     <div id="create-menu" class="hidden">
       <h3 class="header">Create an QR Code</h3>
       <form class="input-group">
-        <input id="input" type="text" placeholder="Link"/>
-        <button id="submit" value="&#10095">Create</button>
+        <input id="input" type="text" placeholder="Link" />
+        <button id="submit" type="submit">
+          <img class="icons" src="Assets\icons\next.svg" alt="" />
+        </button>
       </form>
-      <div id="output_create" class="hidden">
-      </div>
+      <div id="output_create"></div>
     </div>
     <div id="read-menu" class="hidden">
-      <h3 class="header">Read an QR Code</h3>
-      <div>
-        <input id="link" type="text">
-        <button type="submit" id="read">Read</button>
-      </div>
+      <h3 class="header">Read QR Code with</h3>
+      <form id="read_with_link" class="input-group">
+        <input id="link" type="text" />
+        <button type="submit" id="read">
+          <img class="icons" src="Assets\icons\next.svg" alt="" />
+        </button>
+      </form>
       <div id="output_read" class="hidden">
-
+        <div id="loader-el" class="loader"></div>
       </div>
     </div>
   </body>
